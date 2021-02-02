@@ -3,12 +3,27 @@
   margin: 0;
 }
 
-/* Styling for the Top Contact info*/
-.contact-header{
-  display: inline;
-  list-style: none;
+body{
+    background-color: rgb(233, 233, 233);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+/* Styling for the Top Contact info*/
+.contact-header{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.contact-header li{
+    list-style: none;
+    padding: 10px 10px 0 10px;
+}
+
+.contact-header li a{
+    text-decoration: none;
+    color: black;
+}
 /* Styling for the nav bar*/
 nav {
 }
@@ -42,7 +57,9 @@ nav ul li a {
 
 .title{
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 5px 3px 15px rgb(27, 27, 27);
+    font-size: 300%;
 }
