@@ -46,12 +46,14 @@ nav ul li a {
 .back{
     position: relative;
     text-align: center;
-    color: white;
+    height: 600px;
+    width: 100vw;
+    background: black;
+    overflow: hidden;
 }
 
 .background{
     width: 100%;
-    z-index: 0;
     
 }
 
@@ -61,5 +63,12 @@ nav ul li a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 5px 3px 15px rgb(27, 27, 27);
-    font-size: 300%;
+    font-size: 200%;
+    color: white;
+    width: 70%;
+    z-index: 2;
+}
+img {
+  object-fit: cover;
+  opacity: 0.6;
 }
