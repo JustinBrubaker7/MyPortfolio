@@ -68,7 +68,36 @@ nav ul li a {
     width: 70%;
     z-index: 2;
 }
-img {
+.back img {
   object-fit: cover;
   opacity: 0.6;
+}
+
+/**********************
+about section
+***********************/
+
+.my-photo{
+  width: 150px;
+  border-radius: 400px;
+  object-fit: cover;
+}
+
+.about-right{
+  float: right;
+  padding: 20px;
+  border-left: 3px solid darkgray;
+  width: 55%;
+  margin: 0 10px;
+}
+
+.about-left{
+  float: right;
+  width:35%;
+  padding: 25px;
+}
+
+.about-left img{
+  position: relative;
+  left: 150px
 }
