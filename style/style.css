@@ -13,6 +13,7 @@ body {
   /* background-color: rgb(233, 233, 233); */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    width: 100%;
 }
 
 /**********************
@@ -103,6 +104,10 @@ Background image section
   color: white;
   width: 70%;
   z-index: 2;
+}
+
+.title h1{
+  color: var(--yellow);
 }
 
 .title h2{
@@ -217,5 +222,18 @@ Projects section
 ***********************/
 
 .projects{
-  background-color: ;
+  padding-top: 30px;
+}
+.projects h2{
+  text-align: center;
+  text-decoration: underline var(--yellow);
+  margin: 10px 0 0 0;
+}
+
+.projects p{
+  line-height: 1;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 75px;
+  color: grey;
 }
