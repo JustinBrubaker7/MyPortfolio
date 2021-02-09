@@ -1,10 +1,18 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
+:root{
+  --yellow: #dacb00;
+  --blue: #008CBA;
+}
+
+
+
 body{
-    background-color: rgb(233, 233, 233);
+    /* background-color: rgb(233, 233, 233); */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -110,12 +118,63 @@ about section
 
 .about-right{
   float: right;
-  padding: 20px;
-  border-left: 3px solid darkgray;
+  padding: 10px 20px 100px;
+  border-left: 3px solid var(--blue);
   width: 55%;
   margin: 0 10px;
 }
 
+.about-right h2{
+  text-align: center;
+  text-decoration: underline var(--yellow);
+  padding: 0 0 20px;
+  margin-top: 0;
+}
+
+.about-right p{
+  line-height: 1.;
+  font-size: 12px;
+  text-align:justify;
+}
+
+
+/* Button styling */
+.button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid var(--yellow);
+}
+
+.button1:hover {
+  background-color: var(--yellow);
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid var(--blue);
+}
+
+.button2:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+/************/
 .about-left{
   float: right;
   width:30%;
@@ -123,7 +182,20 @@ about section
   margin: 10px;
 }
 
-.about-left img{
+.about-left .my-photo{
   position: relative;
   left: 20%;
+}
+
+.gallery img{
+  height: auto;
+  width: 60px;
+  position: relative;
+  left: 12%;
+
+}
+
+
+#about{
+  background-color:white;
 }
