@@ -25,13 +25,14 @@ header {
 }
 
 .contact-header {
+  float: right;
   display: flex;
   justify-content: flex-end;
 }
 
 .contact-header li {
   list-style: none;
-  padding: 0 5px 0 5px;
+  padding: 10px 5px;
 }
 
 .contact-header li a {
@@ -47,7 +48,7 @@ nav {
 
 nav ul {
   margin-left: 15px;
-  padding: 0 0 3px 0;
+  padding: 10px 5px;
   
 }
 
