@@ -14,6 +14,7 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     width: 100%;
+    font-size: 18px;
 }
 
 /**********************
@@ -32,13 +33,13 @@ header {
 
 .contact-header li {
   list-style: none;
-  padding: 10px 5px;
+  padding: 10px 10px 10px 5px;
 }
 
 .contact-header li a {
   text-decoration: none;
   color: white;
-  font-size: 70%;
+  font-size: 80%;
 }
 
 /* Styling for the nav bar*/
@@ -85,7 +86,7 @@ Background image section
 .back {
   position: relative;
   text-align: center;
-  height: 500px;
+  height: 600px;
   width: 100vw;
   overflow: hidden;
 }
@@ -97,11 +98,11 @@ Background image section
 
 .title {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 5px 3px 15px rgb(27, 27, 27);
-  font-size: 175%;
+  
   color: white;
   width: 70%;
   z-index: 2;
@@ -109,15 +110,16 @@ Background image section
 
 .title h1{
   color: var(--yellow);
+  font-size: 370%;
 }
 
 .title h2{
-  font-size: 120%;
+  font-size: 260%;
 }
 .back img {
   object-fit: cover;
   opacity: 0.6;
-  height: 450px;
+  height: 100%;
 }
 
 /**********************
@@ -132,7 +134,7 @@ about section
 
 .about-right {
   float: right;
-  padding: 30px 20px 100px;
+  padding: 30px 20px 100px 20px;
   border-left: 3px solid var(--blue);
   width: 55%;
   margin: 0 10px;
@@ -146,24 +148,65 @@ about section
 }
 
 .about-right p {
-  line-height: 1;
-  font-size: 12px;
+  line-height: 1.2;
+  font-size: 90%;
   text-align: justify;
   padding-bottom: 30px;
+  padding: 0 25px 30px 25px;
 }
+
+/************/
+.about-left {
+  float: right;
+  width: 30%;
+  padding: 25px;
+  margin: 10px;
+}
+
+.about-left .my-photo {
+  position: relative;
+  left: 20%;
+}
+
+.gallery img {
+  height: auto;
+  width: 65px;
+  position: relative;
+  left: 15%;
+  margin: 4px;
+}
+.gallery{
+  margin-top: 10px;
+  width: 240px;
+}
+
+#about {
+  background-color: white;
+  margin: 60px 0 100px 0;
+}
+
+
+#about::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 
 /* Button styling */
 .button {
   border: none;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+ 
 
 }
 
@@ -171,6 +214,7 @@ about section
   background-color: white;
   color: black;
   border: 2px solid var(--yellow);
+  margin-left: 30px;
 }
 
 .button1:hover {
@@ -191,39 +235,13 @@ about section
 
 
 
-/************/
-.about-left {
-  float: right;
-  width: 30%;
-  padding: 15px;
-  margin: 10px;
-}
-
-.about-left .my-photo {
-  position: relative;
-  left: 20%;
-}
-
-.gallery img {
-  height: auto;
-  width: 60px;
-  position: relative;
-  left: 12%;
-}
-.gallery{
-  margin-top: 10px;
-}
-
-#about {
-  background-color: white;
-}
-
 /**********************
 Projects section
 ***********************/
 
 .projects{
   padding-top: 30px;
+  margin: 50px 0 30px 0;
 }
 .projects h2{
   text-align: center;
