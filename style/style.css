@@ -5,7 +5,7 @@
 }
 
 :root {
-  --yellow: #dacb00;
+  --yellow: rgb(218, 203, 0);
   --blue: #008cba;
 }
 
@@ -210,6 +210,13 @@ about section
   margin-left: 30px;
 }
 
+.projects .button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid var(--yellow);
+  margin: 10px 0 0 0;
+}
+
 .button1:hover {
   background-color: var(--yellow);
   color: white;
@@ -236,8 +243,9 @@ Projects section
 }
 .projects h2 {
   text-align: center;
-  text-decoration: underline var(--yellow);
+  text-decoration: underline var(--blue);
   margin: 10px 0 0 0;
+  font-size: 180%;
 }
 
 .projects p {
@@ -250,28 +258,26 @@ Projects section
 }
 
 hr.rounded {
-  display: flex;
-  border-top: 3px solid var(--blue);
+  border-top: 3px solid var(--yellow);
   border-radius: 5px;
-  width: 60%;
+  width: 62%;
   margin: auto;
+  clear: both;
 }
 
-.projects h3{
-  text-align:center;
-  margin: 20px;
-  text-decoration: underline var(--yellow);
+.projects h3 {
+  text-align: center;
+  margin: 30px 0 0 0;
+  text-decoration: underline var(--blue);
 }
 
-.product-img-1{
+.product-img-1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
 }
-
 
 .project-left {
   float: left;
@@ -282,9 +288,12 @@ hr.rounded {
 
 .project-right {
   float: left;
-  padding: 30px 20px 100px 20px;
-  border-left: 3px solid var(--blue);
+  padding: 10px 20px 20px 60px;
+  /* border-left: 3px solid rgb(218, 203, 0, 0.1); */
   width: 50%;
-  margin: 0 10px;
+  margin: 30px 10px 50px;
 }
 
+.project-right::after {
+  clear: both;
+}
