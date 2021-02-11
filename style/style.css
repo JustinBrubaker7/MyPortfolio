@@ -13,8 +13,8 @@ body {
   /* background-color: rgb(233, 233, 233); */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    width: 100%;
-    font-size: 18px;
+  width: 100%;
+  font-size: 18px;
 }
 
 /**********************
@@ -44,13 +44,11 @@ header {
 
 /* Styling for the nav bar*/
 nav {
-
 }
 
 nav ul {
   margin-left: 15px;
   padding: 10px 5px;
-  
 }
 
 nav ul li {
@@ -102,18 +100,18 @@ Background image section
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 5px 3px 15px rgb(27, 27, 27);
-  
+
   color: white;
   width: 70%;
   z-index: 2;
 }
 
-.title h1{
+.title h1 {
   color: var(--yellow);
   font-size: 370%;
 }
 
-.title h2{
+.title h2 {
   font-size: 260%;
 }
 .back img {
@@ -160,7 +158,7 @@ about section
   float: right;
   width: 30%;
   padding: 25px;
-  margin: 10px;
+  margin: auto;
 }
 
 .about-left .my-photo {
@@ -175,7 +173,7 @@ about section
   left: 15%;
   margin: 4px;
 }
-.gallery{
+.gallery {
   margin-top: 10px;
   width: 240px;
 }
@@ -185,14 +183,11 @@ about section
   margin: 60px 0 100px 0;
 }
 
-
 #about::after {
   content: "";
   clear: both;
   display: table;
 }
-
-
 
 /* Button styling */
 .button {
@@ -206,8 +201,6 @@ about section
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
- 
-
 }
 
 .button1 {
@@ -233,26 +226,65 @@ about section
   color: white;
 }
 
-
-
 /**********************
 Projects section
 ***********************/
 
-.projects{
+.projects {
   padding-top: 30px;
   margin: 50px 0 30px 0;
 }
-.projects h2{
+.projects h2 {
   text-align: center;
   text-decoration: underline var(--yellow);
   margin: 10px 0 0 0;
 }
 
-.projects p{
+.projects p {
   line-height: 1;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
-  padding: 10px 75px;
+  padding: 10px 15%;
   color: grey;
+  margin: 0 0 25px;
 }
+
+hr.rounded {
+  display: flex;
+  border-top: 3px solid var(--blue);
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+}
+
+.projects h3{
+  text-align:center;
+  margin: 20px;
+  text-decoration: underline var(--yellow);
+}
+
+.product-img-1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+
+.project-left {
+  float: left;
+  width: 35%;
+  padding: 10px;
+  margin: auto;
+}
+
+.project-right {
+  float: left;
+  padding: 30px 20px 100px 20px;
+  border-left: 3px solid var(--blue);
+  width: 50%;
+  margin: 0 10px;
+}
+
