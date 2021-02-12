@@ -246,7 +246,7 @@ Projects section
 
 .projects {
   padding-top: 50px;
-  margin: 50px 0 30px 0;
+  margin: 50px 0 0 0;
 }
 .projects h2 {
   text-align: center;
@@ -314,3 +314,59 @@ hr.rounded {
 /**********************
 Contact section
 ***********************/
+
+.contact {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color:  rgb(243, 243, 243);
+}
+
+.contact-box {
+  background-color: white;
+  padding: 25px 50px;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 10px solid var(--yellow);
+  width: 40%;
+  text-align: left;
+  box-shadow: 1px 8px 10px 5px rgba(0,0,0,0.12);
+  margin: 25px 0;
+}
+
+.my-photo {
+  float: left;
+  margin-right: 50px;
+}
+
+.contact-box ul li {
+  list-style-type: none; 
+}
+
+.contact-box ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.contact-box ul li  a img{
+  align-items: center;
+}
+
+.contact-box ul li a:hover {
+  color: grey;
+}
+.contact-box h4, 
+.contact-box p,
+.contact-box ul li {
+  padding: 3px;
+}
+
+.contact-box p {
+  margin-bottom: 6px;
+}
+
+
+.contact-box p,
+.contact-box ul li {
+  font-size: 75%;
+}
