@@ -7,7 +7,7 @@
 :root {
   --yellow: rgb(218, 203, 0);
   --blue: #008cba;
-  --eggshell:  rgba(237, 237, 237, 0.596);
+  --eggshell: rgba(237, 237, 237, 0.596);
 }
 
 body {
@@ -16,7 +16,6 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   width: 100%;
   font-size: 18px;
-  
 }
 
 /**********************
@@ -181,6 +180,10 @@ about section
   clear: both;
 }
 
+.title-hidden {
+  visibility: hidden;
+}
+
 #about {
   background-color: white;
   margin: 60px 0 75px 0;
@@ -309,7 +312,6 @@ hr.rounded {
   clear: both;
 }
 
-
 /**********************
 Contact section
 ***********************/
@@ -319,7 +321,7 @@ Contact section
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color:  var(--eggshell);
+  background-color: var(--eggshell);
 }
 
 .contact-box {
@@ -329,7 +331,7 @@ Contact section
   border-bottom: 10px solid var(--yellow);
   width: 40%;
   text-align: left;
-  box-shadow: 1px 8px 10px 5px rgba(0,0,0,0.12);
+  box-shadow: 1px 8px 10px 5px rgba(0, 0, 0, 0.12);
   margin: 25px 0;
 }
 
@@ -339,22 +341,22 @@ Contact section
 }
 
 .contact-box ul li {
-  list-style-type: none; 
+  list-style-type: none;
 }
 
-.contact-box ul li a{
+.contact-box ul li a {
   text-decoration: none;
   color: black;
 }
 
-.contact-box ul li  a img{
+.contact-box ul li a img {
   align-items: center;
 }
 
 .contact-box ul li a:hover {
   color: grey;
 }
-.contact-box h4, 
+.contact-box h4,
 .contact-box p,
 .contact-box ul li {
   padding: 3px;
@@ -364,22 +366,17 @@ Contact section
   margin-bottom: 6px;
 }
 
-
 .contact-box p,
 .contact-box ul li {
   font-size: 75%;
 }
 
-
+/***********************************************************************************/
 @media screen and (max-width: 768px) {
-  
-
-  body{
+  body {
     width: 100%;
     margin: 0;
     padding: 0;
-    
-
   }
 
   #about {
@@ -387,7 +384,6 @@ Contact section
     display: flex;
     flex-direction: column-reverse;
     margin: 30px 0 30px 0;
-    
   }
   .about-right {
     float: none;
@@ -399,18 +395,18 @@ Contact section
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
   }
 
   .about-right p {
     margin: 0;
-    padding: 0 5% 30px 5%;
+    padding: 0 8% 30px 8%;
+    font-size: 115%;
   }
-  .about-left{
+  .about-left {
     float: none;
     width: 100%;
     padding: 0;
-    margin: 20px 0 35px 0;
+    margin: 20px 0 0 0;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -419,9 +415,10 @@ Contact section
 
   .about-right .button {
     width: 98%;
-    }
+    font-size: 24px;
+  }
 
-  .about-right .button1{
+  .about-right .button1 {
     margin-left: 0;
   }
 
@@ -433,31 +430,102 @@ Contact section
 
   .gallery {
     padding: 0;
-    margin: 0
   }
-  
-  .gallery img{
+
+  .gallery img {
     left: 0;
     margin: 5px;
   }
-  
-.title {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 5px 3px 15px rgb(27, 27, 27);
-  width: 90%;
-}
+
+  .title-hidden {
+    visibility: visible;
+    text-align: center;
+    text-decoration: underline var(--yellow);
+    padding: 0 0 20px;
+    margin-top: 0;
+    font-size: 200%;
+  }
+
+  .about-right h2 {
+    visibility: hidden;
+  }
+
+  .title {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 3px 15px rgb(27, 27, 27);
+    width: 90%;
+  }
+
+  .title h1 {
+    font-size: 300%;
+  }
+
+  .title h2 {
+    font-size: 200%;
+  }
 
 
-.title h1 {
-  font-size: 300%;
-}
+/*  Projects section */
 
-.title h2 {
+  .projects p {
+    padding: 10px 8%;
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+
+    .project-left {
+      float: none;
+      width: 99%;
+      padding: 0;
+      margin: 0;
+  }
+
+  .project-right{
+    width: 80%;
+    padding: 10px 10% 20px 10%;
+  }
+
+  .project-right ul li {
+    padding: 5px;
+    list-style: none;
+    margin-left: 0;
+  }
+
+.projects h2{
   font-size: 200%;
 }
+
+  .projects h3 {
+    margin: 70px 0 0 0;
+    font-size: 140%;
+
+}
+
+.contact-box {
+  width: 65%;
+  margin: 70px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-photo {
+  float: none;
+  margin-right: 0;
+}
+
+.contact-box h4 {
+  font-size: 120%;
+}
+
+.contact-box ul li {
+  font-size: 80%;
+}
+
 
 
 
