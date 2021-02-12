@@ -379,6 +379,19 @@ Contact section
     padding: 0;
   }
 
+  header nav{
+    display: flex;
+    justify-content: center;
+  }
+  header nav ul{
+
+  }
+
+  nav ul {
+    margin-left: 0;
+    padding: 5px;
+  }
+
   #about {
     width: 100%;
     display: flex;
@@ -400,7 +413,7 @@ Contact section
   .about-right p {
     margin: 0;
     padding: 0 8% 30px 8%;
-    font-size: 115%;
+    font-size: 100%;
   }
   .about-left {
     float: none;
@@ -525,6 +538,7 @@ Contact section
 .contact-box ul li {
   font-size: 80%;
 }
+
 
 
 
