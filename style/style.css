@@ -7,7 +7,7 @@
 :root {
   --yellow: rgb(218, 203, 0);
   --blue: #008cba;
-  --eggshell:  rgba(250, 250, 250, 0.767);
+  --eggshell:  rgba(237, 237, 237, 0.596);
 }
 
 body {
@@ -16,6 +16,7 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   width: 100%;
   font-size: 18px;
+  
 }
 
 /**********************
@@ -40,7 +41,7 @@ header {
 .contact-header li a {
   text-decoration: none;
   color: white;
-  font-size: 80%;
+  font-size: 75%;
 }
 
 /* Styling for the nav bar*/
@@ -177,6 +178,7 @@ about section
 .gallery {
   margin-top: 10px;
   width: 240px;
+  clear: both;
 }
 
 #about {
@@ -247,6 +249,7 @@ Projects section
 .projects {
   padding-top: 50px;
   margin: 50px 0 0 0;
+  background-color: var(--eggshell);
 }
 .projects h2 {
   text-align: center;
@@ -306,10 +309,6 @@ hr.rounded {
   clear: both;
 }
 
-.projects{
-  background-color: rgb(243, 243, 243);
-}
-
 
 /**********************
 Contact section
@@ -320,7 +319,7 @@ Contact section
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color:  rgb(243, 243, 243);
+  background-color:  var(--eggshell);
 }
 
 .contact-box {
@@ -369,4 +368,98 @@ Contact section
 .contact-box p,
 .contact-box ul li {
   font-size: 75%;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+
+  body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+
+  }
+
+  #about {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 30px 0 30px 0;
+    
+  }
+  .about-right {
+    float: none;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .about-right p {
+    margin: 0;
+    padding: 0 5% 30px 5%;
+  }
+  .about-left{
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin: 20px 0 35px 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-right .button {
+    width: 98%;
+    }
+
+  .about-right .button1{
+    margin-left: 0;
+  }
+
+  .about-left .my-photo {
+    position: relative;
+    left: 0;
+    margin-right: 0;
+  }
+
+  .gallery {
+    padding: 0;
+    margin: 0
+  }
+  
+  .gallery img{
+    left: 0;
+    margin: 5px;
+  }
+  
+.title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 5px 3px 15px rgb(27, 27, 27);
+  width: 90%;
+}
+
+
+.title h1 {
+  font-size: 300%;
+}
+
+.title h2 {
+  font-size: 200%;
+}
+
+
+
+
 }
