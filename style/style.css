@@ -18,6 +18,11 @@ body {
   font-size: 18px;
 }
 
+main {
+  width: 100%;
+  overflow: hidden;
+}
+
 /**********************
 nav section
 ***********************/
@@ -373,6 +378,8 @@ Contact section
 
 /***********************************************************************************/
 @media screen and (max-width: 768px) {
+
+
   body {
     width: 100%;
     margin: 0;
