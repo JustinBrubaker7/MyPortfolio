@@ -1,9 +1,13 @@
-$(document).ready(function(){
 
-    $(".mobile-nav").on("click", function(){
 
-$("header nav ul").toggleClass("open");
+var i = 0;
+var txt = 'Hi, I\'m Justin';
+var speed = 150;
 
-    });
-
-}
+setTimeout(function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("hi").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}, 1000);

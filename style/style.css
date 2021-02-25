@@ -114,11 +114,11 @@ Background image section
 
 .title h1 {
   color: var(--yellow);
-  font-size: 370%;
+  font-size: 470%;
 }
 
 .title h2 {
-  font-size: 260%;
+  font-size: 300%;
 }
 .back img {
   object-fit: cover;
@@ -375,6 +375,40 @@ Contact section
 .contact-box ul li {
   font-size: 75%;
 }
+
+/*    This is the typing animated effect*/
+.web-dev {
+  color: white;
+  text-transform: none;
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  }
+  
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  30% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
 
 /***********************************************************************************/
 @media screen and (max-width: 768px) {
