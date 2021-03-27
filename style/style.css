@@ -106,7 +106,7 @@ Background image section
 
 .background {
   width: 100%;
-  filter: brightness(60%);
+  filter: brightness(40%);
 }
 
 .title {
