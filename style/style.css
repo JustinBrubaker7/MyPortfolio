@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+
 * {
   padding: 0;
   margin: 0;
@@ -7,16 +11,16 @@
 :root {
   --yellow: rgb(218, 203, 0);
   --blue: #008cba;
-  --eggshell: rgba(237, 237, 237, 0.596);
+  --eggshell: rgba(248, 248, 248, 0.829);
 }
 
 body {
   /* background-color: rgb(233, 233, 233); */
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   width: 100%;
   font-size: 18px;
 }
+
 
 main {
   width: 100%;
@@ -49,8 +53,13 @@ header {
 }
 
 /* Styling for the nav bar*/
-nav {
-}
+/* nav {
+} */
+
+/* header{
+  position: fixed;
+  top: 0;
+} */
 
 nav ul {
   margin-left: 15px;
@@ -90,7 +99,7 @@ Background image section
 .back {
   position: relative;
   text-align: center;
-  height: 600px;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
 }
@@ -102,7 +111,7 @@ Background image section
 
 .title {
   position: absolute;
-  top: 35%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 5px 3px 15px rgb(27, 27, 27);
@@ -169,7 +178,9 @@ about section
 
 .about-left .my-photo {
   position: relative;
-  left: 20%;
+  margin-left: 75px;
+  left: auto;
+  right: auto;
 }
 
 .gallery img {
@@ -213,6 +224,16 @@ about section
   transition-duration: 0.4s;
   cursor: pointer;
 }
+
+.button a {
+  text-decoration: none;
+}
+
+.button1 a,
+.button2 a {
+  color: black;
+}
+
 
 .button1 {
   background-color: white;
@@ -380,35 +401,77 @@ Contact section
 .web-dev {
   color: white;
   text-transform: none;
-  animation: fadeIn ease 10s;
+  animation: fadeIn ease-in 10s;
   -webkit-animation: fadeIn ease 10s;
   }
   
   @keyframes fadeIn {
   0% {opacity:0;}
   30% {opacity:0;}
+  70% {opacity:0.9;}
   100% {opacity:1;}
   }
   
   @-moz-keyframes fadeIn {
   0% {opacity:0;}
+  30% {opacity:0;}
   100% {opacity:1;}
   }
   
   @-webkit-keyframes fadeIn {
   0% {opacity:0;}
+  30% {opacity:0;}
   100% {opacity:1;}
   }
   
   @-o-keyframes fadeIn {
   0% {opacity:0;}
+  30% {opacity:0;}
   100% {opacity:1;}
   }
   
   @-ms-keyframes fadeIn {
   0% {opacity:0;}
+  30% {opacity:0;}
   100% {opacity:1;}
   }
+
+  /* Anitmated mouse scrolldown */
+
+#arrow-link {
+  color: white; 
+  text-decoration: none; 
+ }
+
+.arrow {
+ text-align: center;
+ margin: 25% 0 8% 0;
+}
+.bounce {
+ -moz-animation: bounce 2s infinite;
+ -webkit-animation: bounce 2s infinite;
+ animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {
+   transform: translateY(0);
+ }
+ 40% {
+   transform: translateY(-30px);
+ }
+ 60% {
+   transform: translateY(-15px);
+ }
+}
+
+.hide {
+ display: none;
+}
+
+.see {
+ display: block;
+}
 
 /***********************************************************************************/
 @media screen and (max-width: 768px) {
@@ -424,9 +487,7 @@ Contact section
     display: flex;
     justify-content: center;
   }
-  header nav ul{
 
-  }
 
   nav ul {
     margin-left: 0;
@@ -465,6 +526,12 @@ Contact section
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+  .about-left .my-photo {
+    position: relative;
+    left: auto;
+    right: auto;
+    margin: 0;
   }
 
   .about-right .button {
@@ -580,9 +647,15 @@ Contact section
   font-size: 80%;
 }
 
+}
 
+@media screen and (min-width: 1300px) {
+  .project-right {
+    margin-bottom: 90px;
+  }
 
-
-
-
+  .project-left {
+    width: 30%;
+    margin-bottom: 30px;
+  }
 }
