@@ -307,7 +307,7 @@ hr.rounded {
 
 .projects h3 {
   text-align: center;
-  margin: 30px 0 0 0;
+  margin: 40px 0 0 0;
   text-decoration: underline var(--blue);
 }
 
@@ -397,6 +397,11 @@ Contact section
   font-size: 75%;
 }
 
+
+.contact-link img {
+  margin-bottom: -4px;
+}
+
 /*    This is the typing animated effect*/
 .web-dev {
   color: white;
@@ -445,7 +450,7 @@ Contact section
 
 .arrow {
  text-align: center;
- margin: 25% 0 8% 0;
+ margin: 22% 0 8% 0;
 }
 .bounce {
  -moz-animation: bounce 2s infinite;
@@ -474,7 +479,7 @@ Contact section
 }
 
 /***********************************************************************************/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 848px) {
 
 
   body {
@@ -492,8 +497,8 @@ Contact section
   nav ul {
     margin-left: 0;
     padding: 5px;
+    margin: 5px;
   }
-
   #about {
     width: 100%;
     display: flex;
@@ -534,8 +539,8 @@ Contact section
     margin: 0;
   }
 
-  .about-right .button {
-    width: 98%;
+  .about-right .butaton {
+    width: 98% !important;
     font-size: 24px;
   }
 
@@ -647,15 +652,23 @@ Contact section
   font-size: 80%;
 }
 
+.arrow {
+  margin: 26% 0 8% 0;
+ }
+
 }
 
 @media screen and (min-width: 1300px) {
   .project-right {
-    margin-bottom: 90px;
+    margin-bottom: 110px;
   }
 
   .project-left {
     width: 30%;
     margin-bottom: 30px;
   }
+
+  .arrow {
+    margin: 29% 0 8% 0;
+   }
 }
