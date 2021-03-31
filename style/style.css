@@ -21,9 +21,13 @@ body {
   font-size: 18px;
 }
 
+p {
+  line-height: 23px !important;
+}
+
 
 main {
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 
