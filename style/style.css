@@ -16,7 +16,7 @@
 
 body {
   /* background-color: rgb(233, 233, 233); */
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   width: 100%;
   font-size: 18px;
 }
@@ -279,18 +279,34 @@ about section
 Projects section
 ***********************/
 
-.projects {
-  padding-top: 50px;
-  margin: 50px 0 0 0;
-  background-color: var(--eggshell);
+#thinker_image {
+  float: right;
+  margin: -250px 25px 0 25px;
+  width: 45%;
 }
-.projects h2 {
+
+.projects {
+  padding-top: 20px;
+  margin: 50px 0 0 0;
+}
+
+#projects  {
+  clear: both;
   text-align: center;
   text-decoration: underline var(--blue);
   margin: 10px 0 0 0;
-  font-size: 180%;
+  font-size: 300%;
   padding: 20px 0 10px;
 }
+
+.container h2 {
+  text-align: center;
+  text-decoration: underline var(--blue);
+  margin: 10px 0 0 0;
+  font-size: 150%;
+  padding: 20px 0 10px;
+}
+
 
 .projects p {
   line-height: 1;
@@ -335,7 +351,7 @@ hr.rounded {
   padding: 10px 20px 20px 60px;
   /* border-left: 3px solid rgb(218, 203, 0, 0.1); */
   width: 50%;
-  margin: 30px 10px 50px;
+  /* margin: 30px 10px 50px; */
 }
 
 .project-right::after {
@@ -352,6 +368,7 @@ Contact section
   justify-content: center;
   align-items: center;
   background-color: var(--eggshell);
+  padding: 40px 0;
 }
 
 .contact-box {
@@ -600,6 +617,10 @@ Contact section
 
 /*  Projects section */
 
+#thinker_image {
+  display: none;
+}
+
   .projects p {
     padding: 10px 8%;
     font-size: 18px;
@@ -624,8 +645,8 @@ Contact section
     margin-left: 0;
   }
 
-.projects h2{
-  font-size: 200%;
+#projects h2{
+  font-size: 270%;
 }
 
   .projects h3 {
