@@ -10,5 +10,5 @@ setTimeout(function typeWriter() {
     i++;
     setTimeout(typeWriter, speed);
   }
-}, 700);
+}, 600);
 

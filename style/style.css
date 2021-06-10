@@ -115,7 +115,7 @@ Background image section
 
 .title {
   position: absolute;
-  top: 75%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 5px 3px 15px rgb(27, 27, 27);
@@ -170,6 +170,7 @@ about section
   text-align: justify;
   padding-bottom: 30px;
   padding: 0 25px 30px 25px;
+  color: #494949;
 }
 
 /************/
@@ -236,6 +237,7 @@ about section
 .button1 a,
 .button2 a {
   color: black;
+
 }
 
 
@@ -250,8 +252,8 @@ about section
   background-color: var(--yellow);
   color: white;
   border: 2px solid var(--yellow);
-  margin-left: 30px;
-  border-radius: 8px;
+  border-radius: 6px;
+  font-size: 20px;
 }
 
 .button1:hover {
@@ -276,6 +278,7 @@ about section
   background-color: white;
   color: black;
   border: 2px solid var(--blue);
+  z-index: 2;
 }
 
 .button2:hover {
@@ -289,8 +292,11 @@ Projects section
 
 #thinker_image {
   float: right;
-  margin: -250px 25px 0 25px;
+  margin: -150px 25px 0 25px;
   width: 45%;
+  padding: 20px 10px 25px 10px;
+  z-index: -1;
+  height: auto;
 }
 
 .projects {
@@ -350,7 +356,7 @@ hr.rounded {
 .project-left {
   float: left;
   width: 35%;
-  padding: 10px;
+  padding: 25px 10px;
   margin: auto;
 }
 
@@ -434,7 +440,7 @@ Contact section
 /*    This is the typing animated effect*/
 .web-dev {
   color: white;
-  margin: 10px
+  margin: 10px;
   text-transform: none;
   animation: fadeIn ease-in 10s;
   -webkit-animation: fadeIn ease 10s;
@@ -480,7 +486,7 @@ Contact section
 
 .arrow {
  text-align: center;
- margin: 22% 0 8% 0;
+ margin: 10% 0 8% 0;
 }
 .bounce {
  -moz-animation: bounce 2s infinite;
@@ -569,10 +575,10 @@ Contact section
     margin: 0;
   }
 
-  .about-right .button {
+  /* .about-right .button {
     width: 98% !important;
     font-size: 24px;
-  }
+  } */
 
   .about-right .button1 {
     
